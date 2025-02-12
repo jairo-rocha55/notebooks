@@ -36,7 +36,7 @@ def install_requirements(
     if process_lfs.returncode == -1:
         raise Exception("😭 Failed to install Git LFS and soundfile")
     else:
-        print("✅ Git LFS installed!")
+        print("✅ Git LFS installed!JR")
 
     if is_chapter2:
         transformers_cmd = "python -m pip install -U transformers==4.13.0 datasets".split()

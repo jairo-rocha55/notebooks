@@ -88,4 +88,4 @@ def install_requirements(
             raise Exception("😭 Failed to install soundfile")
         else:
             print("✅ soundfile installed!")
-        print("🥳 Chapter installation complete!")
+        print("🥳 Chapter installation complete JR!")

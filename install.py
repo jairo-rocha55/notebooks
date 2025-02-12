@@ -45,6 +45,7 @@ def install_requirements(
             stdout=subprocess.PIPE,
             stderr=subprocess.PIPE,
         )
+    print("🥳 Chapter installation complete JR!")
 
     if is_chapter6:
         transformers_cmd = "python -m pip install datasets==2.0.0".split()
@@ -88,4 +89,4 @@ def install_requirements(
             raise Exception("😭 Failed to install soundfile")
         else:
             print("✅ soundfile installed!")
-        print("🥳 Chapter installation complete JR!")
+        print("🥳 Chapter installation complete!")

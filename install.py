@@ -36,16 +36,15 @@ def install_requirements(
     if process_lfs.returncode == -1:
         raise Exception("😭 Failed to install Git LFS and soundfile")
     else:
-        print("✅ Git LFS installed!JR")
+        print("✅ Git LFS installed!JR2")
 
     if is_chapter2:
-        transformers_cmd = "python -m pip install -U transformers==4.13.0 datasets".split()
+        transformers_cmd = "python -m pip install -U huggingface_hub fsspec datasets transformers==4.13.0 ".split()
         process_scatter = subprocess.run(
             transformers_cmd,
             stdout=subprocess.PIPE,
             stderr=subprocess.PIPE,
         )
-    print("🥳 Chapter installation complete JR!")
 
     if is_chapter6:
         transformers_cmd = "python -m pip install datasets==2.0.0".split()

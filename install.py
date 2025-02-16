@@ -19,7 +19,7 @@ def install_requirements(
     """Installs the required packages for the project."""
 
     print("⏳ Installing base requirements ...")
-    cmd = ["python", "-m", "pip", "install", "-r"]
+    cmd = ["python", "-m", "pip", "install", "-U", "-r"]
     if is_chapter7:
         cmd += "requirements-chapter7.txt -f https://download.pytorch.org/whl/torch_stable.html".split()
     elif is_chapter7_v2:

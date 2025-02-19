@@ -1,10 +1,10 @@
 # Base requirements
 transformers[tf,torch,sentencepiece,vision,optuna,sklearn,onnxruntime] #==4.16.2  JR
-datasets[audio]==1.16.1
+datasets[audio]# JR ==1.16.1
 matplotlib
 ipywidgets
 # Chapter 2 - Classification
-umap-learn==0.5.1
+umap-learn #JR==0.5.1
 # Chapter 3 - Anatomy
 bertviz==1.2.0
 # Chapter 4 - NER

@@ -4,7 +4,7 @@ datasets[audio]# JR ==1.16.1
 matplotlib
 ipywidgets
 # Chapter 2 - Classification
-umap-learn #JR==0.5.1
+umap-learn==0.5.1
 # Chapter 3 - Anatomy
 bertviz==1.2.0
 # Chapter 4 - NER

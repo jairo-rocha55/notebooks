@@ -19,7 +19,7 @@ def install_requirements(
     """Installs the required packages for the project."""
 
     print("⏳ Installing base requirements ...")
-    cmd = ["python", "-m", "pip", "install", "-U", "-r"]  # -U JR
+    cmd = ["python", "-m", "pip", "install", "-r"] 
     if is_chapter7:
         cmd += "requirements-chapter7.txt -f https://download.pytorch.org/whl/torch_stable.html".split()
     elif is_chapter7_v2:
@@ -39,7 +39,7 @@ def install_requirements(
         print("✅ Git LFS installed!JR2")
 
     if is_chapter2:
-        transformers_cmd = "python -m pip install transformers datasets==2.8.0".split() # transformers==4.13.0 datasets==2.8.0  JR  -U suggestions: huggingface_hub fsspec 
+        transformers_cmd = "python -m pip install -U datasets huggingface_hub fsspec".split() # pip install transformers==4.13.0 datasets==2.8.0".split() # transformers==4.13.0 datasets==2.8.0  JR  
         process_scatter = subprocess.run(
             transformers_cmd,
             stdout=subprocess.PIPE,

@@ -39,7 +39,7 @@ def install_requirements(
         print("✅ Git LFS installed!JR2")
 
     if is_chapter2:
-        transformers_cmd = "python -m pip install -U datasets huggingface_hub fsspec".split() # pip install transformers==4.13.0 datasets==2.8.0".split() # transformers==4.13.0 datasets==2.8.0  JR  
+        transformers_cmd = "python -m pip install -U transformers datasets huggingface_hub fsspec".split() # pip install transformers==4.13.0 datasets==2.8.0".split() # transformers==4.13.0 datasets==2.8.0  JR  
         process_scatter = subprocess.run(
             transformers_cmd,
             stdout=subprocess.PIPE,
